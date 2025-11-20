@@ -349,7 +349,7 @@ class CaseUpdate:
 
         """Add Case Update for the requested Case Id.
 
-        Request case updates for the specified case. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Update request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseUpdate\">  WebSocket Callbacks Documentation </a>
+        Request case updates for the specified case. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Update request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseUpdate\">  WebSocket Callbacks Documentation </a>
 
         :param case_update_request:
         :type case_update_request: CaseUpdateRequest
@@ -397,7 +397,7 @@ class CaseUpdate:
 
         """Add Case Update for the requested Case Id.
 
-        Request case updates for the specified case. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Update request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseUpdate\">  WebSocket Callbacks Documentation </a>
+        Request case updates for the specified case. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Update request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseUpdate\">  WebSocket Callbacks Documentation </a>
 
         :param case_update_request:
         :type case_update_request: CaseUpdateRequest
@@ -444,7 +444,7 @@ class CaseUpdate:
 
         """Add Case Update for the requested Case Id.
 
-        Request case updates for the specified case. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Update request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseUpdate\">  WebSocket Callbacks Documentation </a>
+        Request case updates for the specified case. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Update request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseUpdate\">  WebSocket Callbacks Documentation </a>
 
         :param case_update_request:
         :type case_update_request: CaseUpdateRequest

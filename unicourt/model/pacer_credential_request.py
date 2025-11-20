@@ -29,8 +29,9 @@ class PacerCredentialRequest(BaseModel):
     """ # noqa: E501
     pacer_user_id: Annotated[str, Field(min_length=6, strict=True, max_length=40)] = Field(description="Pacer User Id.", alias="pacerUserId")
     default_pacer_client_code: Optional[Annotated[str, Field(min_length=0, strict=True, max_length=32)]] = Field(default=None, description="This is mandatory if your setting in PACER website is set to Yes for the flag `Require Client Code?` under `Set PACER Billing Preferences` page. The client code is a text field entered by users upon login that can be used to track usage by person, client matter number, or other meaningful entry up to 32 characters, comprising the following:    Alphabetic characters (A-Z or a-z)    Numeric digits (0-9)   Period (.)    Underscore (_)    Hyphen (-)    Slash (/)", alias="defaultPacerClientCode")
+    pacer_mfa_secret_key: Optional[Annotated[str, Field(min_length=32, strict=True, max_length=32)]] = Field(default=None, description="Pacer MFA Secret Key.", alias="pacerMFASecretKey")
     password: Annotated[str, Field(min_length=8, strict=True, max_length=45)] = Field(description="Password.")
-    __properties: ClassVar[List[str]] = ["pacerUserId", "defaultPacerClientCode", "password"]
+    __properties: ClassVar[List[str]] = ["pacerUserId", "defaultPacerClientCode", "pacerMFASecretKey", "password"]
 
     @field_validator('default_pacer_client_code')
     def default_pacer_client_code_validate_regular_expression(cls, value):
@@ -86,6 +87,11 @@ class PacerCredentialRequest(BaseModel):
         if self.default_pacer_client_code is None and "default_pacer_client_code" in self.model_fields_set:
             _dict['defaultPacerClientCode'] = None
 
+        # set to None if pacer_mfa_secret_key (nullable) is None
+        # and model_fields_set contains the field
+        if self.pacer_mfa_secret_key is None and "pacer_mfa_secret_key" in self.model_fields_set:
+            _dict['pacerMFASecretKey'] = None
+
         return _dict
 
     @classmethod
@@ -100,6 +106,7 @@ class PacerCredentialRequest(BaseModel):
         _obj = cls.model_validate({
             "pacerUserId": obj.get("pacerUserId"),
             "defaultPacerClientCode": obj.get("defaultPacerClientCode"),
+            "pacerMFASecretKey": obj.get("pacerMFASecretKey"),
             "password": obj.get("password")
         })
         return _obj

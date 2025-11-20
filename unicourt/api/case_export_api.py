@@ -44,7 +44,7 @@ class CaseExportApi:
     @validate_call
     def export_case(
         self,
-        case_id: Annotated[str, Field(min_length=18, strict=True, max_length=18, description="The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a>")],
+        case_id: Annotated[str, Field(min_length=18, strict=True, max_length=18, description="The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a>")],
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -62,7 +62,7 @@ class CaseExportApi:
 
         Retrieve information about the specified case export.
 
-        :param case_id: The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a> (required)
+        :param case_id: The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a> (required)
         :type case_id: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -96,6 +96,7 @@ class CaseExportApi:
 
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "CaseExportCallback",
+            '403': "Exception",
             '404': "Exception",
         }
         response_data = self.api_client.call_api(
@@ -112,7 +113,7 @@ class CaseExportApi:
     @validate_call
     def export_case_with_http_info(
         self,
-        case_id: Annotated[str, Field(min_length=18, strict=True, max_length=18, description="The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a>")],
+        case_id: Annotated[str, Field(min_length=18, strict=True, max_length=18, description="The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a>")],
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -130,7 +131,7 @@ class CaseExportApi:
 
         Retrieve information about the specified case export.
 
-        :param case_id: The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a> (required)
+        :param case_id: The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a> (required)
         :type case_id: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -164,6 +165,7 @@ class CaseExportApi:
 
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "CaseExportCallback",
+            '403': "Exception",
             '404': "Exception",
         }
         response_data = self.api_client.call_api(
@@ -180,7 +182,7 @@ class CaseExportApi:
     @validate_call
     def export_case_without_preload_content(
         self,
-        case_id: Annotated[str, Field(min_length=18, strict=True, max_length=18, description="The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a>")],
+        case_id: Annotated[str, Field(min_length=18, strict=True, max_length=18, description="The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a>")],
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -198,7 +200,7 @@ class CaseExportApi:
 
         Retrieve information about the specified case export.
 
-        :param case_id: The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a> (required)
+        :param case_id: The caseId value of the case for which case export information is to be retrieved. The progress of this Case Export request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseExport\">  WebSocket Callbacks Documentation </a> (required)
         :type case_id: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -232,6 +234,7 @@ class CaseExportApi:
 
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "CaseExportCallback",
+            '403': "Exception",
             '404': "Exception",
         }
         response_data = self.api_client.call_api(

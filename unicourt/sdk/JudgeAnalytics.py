@@ -664,7 +664,7 @@ class JudgeAnalytics:
 
         """Judge search.
 
-        ### Search for a judge using a keyword expression. 
+        ### Search for a judge using a keyword expression. <br> **Note: A maximum of 15 operators are allowed in a single query.** <br> 
 
         :param q: The keyword expression targeting the desired judge.</a> 
         :type q: str
@@ -715,7 +715,7 @@ class JudgeAnalytics:
 
         """Judge search.
 
-        ### Search for a judge using a keyword expression. 
+        ### Search for a judge using a keyword expression. <br> **Note: A maximum of 15 operators are allowed in a single query.** <br> 
 
         :param q: The keyword expression targeting the desired judge.</a> 
         :type q: str
@@ -765,7 +765,7 @@ class JudgeAnalytics:
 
         """Judge search.
 
-        ### Search for a judge using a keyword expression. 
+        ### Search for a judge using a keyword expression. <br> **Note: A maximum of 15 operators are allowed in a single query.** <br> 
 
         :param q: The keyword expression targeting the desired judge.</a> 
         :type q: str

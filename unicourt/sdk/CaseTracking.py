@@ -484,7 +484,7 @@ class CaseTracking:
 
         """Add Case Track for the requested Case Id.
 
-        Track the specified case. The progress of this Case Track request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#liveCallbacks\">  WebSocket Callbacks Documentation </a>
+        Track the specified case. The progress of this Case Track request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#liveCallbacks\">  WebSocket Callbacks Documentation </a>
 
         :param case_track_request:
         :type case_track_request: CaseTrackRequest
@@ -532,7 +532,7 @@ class CaseTracking:
 
         """Add Case Track for the requested Case Id.
 
-        Track the specified case. The progress of this Case Track request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#liveCallbacks\">  WebSocket Callbacks Documentation </a>
+        Track the specified case. The progress of this Case Track request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#liveCallbacks\">  WebSocket Callbacks Documentation </a>
 
         :param case_track_request:
         :type case_track_request: CaseTrackRequest
@@ -579,7 +579,7 @@ class CaseTracking:
 
         """Add Case Track for the requested Case Id.
 
-        Track the specified case. The progress of this Case Track request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#liveCallbacks\">  WebSocket Callbacks Documentation </a>
+        Track the specified case. The progress of this Case Track request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#liveCallbacks\">  WebSocket Callbacks Documentation </a>
 
         :param case_track_request:
         :type case_track_request: CaseTrackRequest

@@ -1573,7 +1573,7 @@ class CaseDocumentsApi:
     ) -> CaseDocumentOrderCallback:
         """Add Case Document Order for requested Document Ids.
 
-        Add Case Document Order for requested Document Ids. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Document Order request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseDocumentOrder\">  WebSocket Callbacks Documentation </a>
+        Add Case Document Order for requested Document Ids. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Document Order request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseDocumentOrder\">  WebSocket Callbacks Documentation </a>
 
         :param case_document_order_request: If the Case Document Order is for Preview, then the value for ``isPreviewOnly`` should be ``true`` else ``false``. 
         :type case_document_order_request: CaseDocumentOrderRequest
@@ -1611,6 +1611,7 @@ class CaseDocumentsApi:
             '200': "CaseDocumentOrderCallback",
             '400': "Exception",
             '402': "Exception",
+            '403': "Exception",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1642,7 +1643,7 @@ class CaseDocumentsApi:
     ) -> ApiResponse[CaseDocumentOrderCallback]:
         """Add Case Document Order for requested Document Ids.
 
-        Add Case Document Order for requested Document Ids. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Document Order request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseDocumentOrder\">  WebSocket Callbacks Documentation </a>
+        Add Case Document Order for requested Document Ids. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Document Order request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseDocumentOrder\">  WebSocket Callbacks Documentation </a>
 
         :param case_document_order_request: If the Case Document Order is for Preview, then the value for ``isPreviewOnly`` should be ``true`` else ``false``. 
         :type case_document_order_request: CaseDocumentOrderRequest
@@ -1680,6 +1681,7 @@ class CaseDocumentsApi:
             '200': "CaseDocumentOrderCallback",
             '400': "Exception",
             '402': "Exception",
+            '403': "Exception",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1711,7 +1713,7 @@ class CaseDocumentsApi:
     ) -> RESTResponseType:
         """Add Case Document Order for requested Document Ids.
 
-        Add Case Document Order for requested Document Ids. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Document Order request is available via web socket messages documented on <a href=\"https://sapp.unicourt.com/developers/enterpriseapi/api/UniCourt-Enterprise-Callback-Async-API-Spec/#caseDocumentOrder\">  WebSocket Callbacks Documentation </a>
+        Add Case Document Order for requested Document Ids. The status will be ``IN_PROGRESS`` after it has been requested. If the request is not processed within 4 hours, it will be reported as ``DELAYED``.  If the request is still incomplete after 4 hours, it will remain in the DELAYED status for up to 72 hours after the request was approved. Such requests will be recorded as ``TIMEOUT`` after 72 hours. The progress of this Case Document Order request is available via web socket messages documented on <a href=\"/developers/enterpriseapi/api/async/UniCourt-Enterprise-Callback-Async-API-Spec/#caseDocumentOrder\">  WebSocket Callbacks Documentation </a>
 
         :param case_document_order_request: If the Case Document Order is for Preview, then the value for ``isPreviewOnly`` should be ``true`` else ``false``. 
         :type case_document_order_request: CaseDocumentOrderRequest
@@ -1749,6 +1751,7 @@ class CaseDocumentsApi:
             '200': "CaseDocumentOrderCallback",
             '400': "Exception",
             '402': "Exception",
+            '403': "Exception",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1827,4 +1830,5 @@ class CaseDocumentsApi:
             _host=_host,
             _request_auth=_request_auth
         )
+
 

@@ -1218,7 +1218,7 @@ class AttorneyAnalyticsApi:
     ) -> NormAttorneySearchResponse:
         """Attorney search.
 
-        ### This endpoint retrieves information, including the normAttorneyId, on all attorneys in our normalized attorney database which match the request parameters. All query parameters supported by this API can be found in the schema section below. 
+        ### This endpoint retrieves information, including the normAttorneyId, on all attorneys in our normalized attorney database which match the request parameters. All query parameters supported by this API can be found in the schema section below. <br> **Note: A maximum of 15 operators are allowed in a single query.** <br> 
 
         :param q: The URL encoded query you are searching for. The query can be as simple as a keyword, but supports many additional options and filters.</a> 
         :type q: str
@@ -1290,7 +1290,7 @@ class AttorneyAnalyticsApi:
     ) -> ApiResponse[NormAttorneySearchResponse]:
         """Attorney search.
 
-        ### This endpoint retrieves information, including the normAttorneyId, on all attorneys in our normalized attorney database which match the request parameters. All query parameters supported by this API can be found in the schema section below. 
+        ### This endpoint retrieves information, including the normAttorneyId, on all attorneys in our normalized attorney database which match the request parameters. All query parameters supported by this API can be found in the schema section below. <br> **Note: A maximum of 15 operators are allowed in a single query.** <br> 
 
         :param q: The URL encoded query you are searching for. The query can be as simple as a keyword, but supports many additional options and filters.</a> 
         :type q: str
@@ -1362,7 +1362,7 @@ class AttorneyAnalyticsApi:
     ) -> RESTResponseType:
         """Attorney search.
 
-        ### This endpoint retrieves information, including the normAttorneyId, on all attorneys in our normalized attorney database which match the request parameters. All query parameters supported by this API can be found in the schema section below. 
+        ### This endpoint retrieves information, including the normAttorneyId, on all attorneys in our normalized attorney database which match the request parameters. All query parameters supported by this API can be found in the schema section below. <br> **Note: A maximum of 15 operators are allowed in a single query.** <br> 
 
         :param q: The URL encoded query you are searching for. The query can be as simple as a keyword, but supports many additional options and filters.</a> 
         :type q: str
@@ -1755,4 +1755,5 @@ class AttorneyAnalyticsApi:
             _host=_host,
             _request_auth=_request_auth
         )
+
 
